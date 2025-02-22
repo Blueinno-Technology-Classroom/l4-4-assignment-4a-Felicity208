@@ -1,6 +1,15 @@
 # ✅ Complete this function, replace `pass` with your solution:
 def find_min_max(numbers) -> dict:
-    pass
+    min = numbers[0]
+    max = numbers[0]
+    for num in numbers:
+        if min > num:
+            min = num
+        if max < num:
+            max = num 
+    return {'min': min , 'max':max}
+
+    
 
 
 
